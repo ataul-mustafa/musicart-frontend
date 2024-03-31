@@ -282,7 +282,7 @@
     .checkoutContainer > div > .left > div:nth-child(3) > div > div >img{
         max-width: 70px;
         height: 65px;
-        margin: 0 30px 20px 0;
+        margin: 0 20px 20px 0;
         border: 1px solid rgb(2, 2, 56);
     }
     
