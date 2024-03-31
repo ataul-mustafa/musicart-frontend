@@ -1,0 +1,31 @@
+.searchContainer {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.searchContainer > input{
+    width: 90%;
+    padding: 10px 0;
+    padding-left: 5%;
+    font-size: 33px;
+    border-radius: 40px;
+    border: 3px solid #C8C8C8;
+}
+
+.searchContainer > :nth-child(2){
+    position: absolute;
+    left: 7%;
+    color: rgb(70, 72, 73);
+    font-size: 25px;
+}
+
+@media screen and (max-width: 700px) {
+    .searchContainer {
+        display: none;
+    }
+}
+  

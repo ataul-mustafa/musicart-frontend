@@ -1,0 +1,17 @@
+.footerContainer{
+    width: 100%;
+    background-color: #2E0052;
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 20px 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .footerContainer {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+}

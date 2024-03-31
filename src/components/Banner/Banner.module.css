@@ -1,0 +1,79 @@
+.bannerContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerContainer > div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    height: 270px;
+    background-image: linear-gradient(to right, #7286B4, #E794CE);
+    border-radius: 30px;
+}
+
+.bannerContainer > div > div{
+    width: 70%;
+    font-size: 60px;
+    font-weight: 500;
+    color: #2E0052;
+    padding: 60px 0 30px 40px;
+}
+
+.bannerContainer > div > div > button{
+    display: none;
+}
+
+.bannerContainer > div > img{
+    width: auto;
+    height: 300px;
+    position: relative;
+    bottom: 30px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .bannerContainer{
+        height: 20vh;
+        margin-top: 15px;
+    }
+    
+    .bannerContainer > div{
+        width: 90%;
+        height: 90%;
+        border-radius: 7px;
+
+    }
+    
+    .bannerContainer > div > div{
+        font-size: 20px;
+        color: #2E0052;
+        padding: 6% 0 20px 20px;
+    }
+
+    .bannerContainer > div > div > button{
+        display: block;
+        font-size: 9px;
+        font-weight: 400;
+        background-color: #2E0052;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        padding: 5px 20px;
+        margin-top: 10px;
+    }
+    
+    .bannerContainer > div > img{
+        width: auto;
+        height: 110%;
+        position: relative;
+        bottom: 10%;
+        z-index: 1;
+        /* left: 10px; */
+    }
+    
+    
+}

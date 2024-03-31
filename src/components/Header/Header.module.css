@@ -1,0 +1,189 @@
+.wrraper{
+    width: 100vw;
+    height: 185px;
+    /* margin-bottom: 50px; */
+}
+
+.wrraper > .headerContainer{
+    width: 100vw;
+    height: 63px;
+    background-color: #2E0052;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+
+.wrraper > .headerContainer > div{
+    width: 30%;
+}
+
+.wrraper > .headerContainer > div:nth-child(1){
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wrraper > .headerContainer > div:nth-child(1) > :nth-child(1){
+    font-size: 30px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.wrraper > .headerContainer > div:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrraper > .headerContainer > div:nth-child(3) > div > a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.wrraper > .logoCart{
+    width: 100vw;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 60px;
+    z-index: 50;
+    background-color: #fff;
+}
+
+.wrraper > .logoCart > div:nth-child(1){
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.wrraper > .logoCart > div:nth-child(1) > p, .wrraper > .logoCart > div:nth-child(1) > div > a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 20px;
+}
+
+.wrraper > .logoCart > div:nth-child(2){
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wrraper > .logoCart > div:nth-child(2) > a{
+    text-decoration: none;
+    background-color: #1D7000;
+    font-weight: 400;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.wrraper > .logoCart > div:nth-child(2) > :nth-child(1) > :nth-child(1){
+    font-size: 28px;
+}
+
+.wrraper > .logoCart > div:nth-child(2) > :nth-child(2) {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+    font-weight: 500;
+    border: 1px solid #2E0052;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profileInfo{
+    width: 220px;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 0;
+}
+
+.profileInfo > h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(159, 148, 148, 0.527);
+}
+
+.profileInfo > button{
+    font-size: 25px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobileHeader{
+    display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+    .wrraper{
+        display: none;
+    }
+    .logoCart{
+        display: none;
+    }
+
+    .mobileHeaderWrapper{
+        width: 100vw;
+        height: 75px;
+    }
+
+    .mobileHeaderWrapper >.mobileHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 75px;
+        background-color: #2E0052;
+        position: fixed;
+        top: 0;
+        z-index: 50;
+    }
+
+    .mobileHeaderWrapper > .mobileHeader > input{
+        width: 88%;
+        height: 38px;
+        padding-left: 40px;
+        color: #909090;
+        outline: none;
+        font-size: 20px;
+    }
+
+    .mobileHeaderWrapper > .mobileHeader > :nth-child(2){
+        color: #909090;
+        position: absolute;
+        top: 28px;
+        left: 9%;
+        font-size: 20px;
+    }
+}

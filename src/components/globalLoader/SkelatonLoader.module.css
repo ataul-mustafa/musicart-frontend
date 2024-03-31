@@ -1,0 +1,69 @@
+.loader{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > div{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.loader > div > div{
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.loader > div > div > div:nth-child(1){
+    width: 100%;
+    height: 50%;
+    background-color: #bdb0b0;
+    overflow-x: hidden;
+}
+
+.loader > div > div > div:nth-child(2){
+    width: 100%;
+    height: 10%;
+    background-color: #bdb0b0;
+    margin-top: 30%;
+    overflow-x: hidden;
+}
+
+.loader > div > div > div:nth-child(1) > div, .loader > div > div > div:nth-child(2) > div{
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(to right, #bdb0b0, #dbccccd7, #bdb0b0);
+    position: relative;
+    left: 0;
+    animation: loader 1.2s infinite;
+}
+
+@keyframes loader {
+    from{
+        left: -50%;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .loader > div{
+        width: 90%;
+        height: 90%;
+    }
+
+    .loader > div > div{
+        width: 42vw;
+        height: 55vw;
+    }
+}

@@ -1,0 +1,227 @@
+.prDetailsCont{
+    width: 100vw;
+}
+
+.prDetailsCont > .prdDetailWrapper{
+    margin: 0 5% 5% 5%;
+    width: 90%;
+}
+
+.prDetailsCont > .prdDetailWrapper > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.prDetailsCont > .prdDetailWrapper > h2{
+    font-size: 34px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+
+.thumbnail{
+    width: 200px;
+    height: auto;
+    max-height: 180px;
+    margin: 0 10px;
+    border: 1px solid red;
+}
+
+.originalImg{
+    width: 50px;
+    height: 480px;
+}
+
+.prDetailsCont > .prdDetailWrapper > div > .desc{
+    padding: 30px;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.prDetailsCont > .prdDetailWrapper > div > .desc > h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.prDetailsCont > .prdDetailWrapper > div > .desc > div{
+    display: flex;
+    align-items: center;
+}
+
+.prDetailsCont > .prdDetailWrapper > div > .desc > div > p{
+    margin: 4px 0 0 10px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.prDetailsCont > .prdDetailWrapper > div > .desc > h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.prDetailsCont > .prdDetailWrapper > div > .desc > .prdName{
+    display: none;
+}
+
+.prDetailsCont > .prdDetailWrapper > div > .desc > h3{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.prDetailsCont > .prdDetailWrapper > div > .desc > ul > p, .prDetailsCont > .prdDetailWrapper > div > .desc > ul > li{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.prDetailsCont > .prdDetailWrapper > div > .desc > ul > p{
+    margin: 10px 0 0 0;
+}
+
+.prdDetailWrapper > div > .desc > ul > li{
+    margin-left: 20px;
+}
+
+.prdDetailWrapper > div > .desc > h4{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.prdDetailWrapper > div > .desc > h4 > span{
+    font-weight: 400;
+}
+
+.prdDetailWrapper > .btn2{
+    display: none;
+
+}
+
+.prdDetailWrapper > div > .desc > button, .prdDetailWrapper > .btn2{
+    width: 400px;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 400;
+    background-color: #FFD600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.prdDetailWrapper > div > .desc > button:hover{
+    background-color: #d89c03;
+}
+
+.prdDetailWrapper > div > .desc > .btn1{
+    background-color: #FFD600;
+}
+
+.prdDetailWrapper > div > .desc > .btn2{
+    background-color: #ffb700;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    
+    .prDetailsCont > .prdDetailWrapper > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > h2{
+        display: none;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > div > .desc{
+        padding: 30px 0;
+        width: 100%;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > div > .desc > h1{
+        font-size: 30px;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > div > .desc > div{
+        margin: 10px 0;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > div > .desc > div > p{
+        margin: 6px 0 0 12px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > div > .desc > h2{
+        font-size: 19px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > div > .desc > .prdName{
+        display: block;
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > div > .desc > h3{
+        font-size: 17px;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > div > .desc > ul > p, .prDetailsCont > .prdDetailWrapper > div > .desc > ul > li{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    
+    .prDetailsCont > .prdDetailWrapper > div > .desc > ul > p{
+        margin: 10px 0 0 0;
+    }
+    
+    .prdDetailWrapper > div > .desc > ul > li{
+        margin-left: 20px;
+    }
+    
+    .prdDetailWrapper > div > .desc > h4{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    .prdDetailWrapper > div > .desc > button, .prdDetailWrapper > .btn2{
+        width: 100%;
+        height: 44px;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        background-color: #FFD600;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .prdDetailWrapper > .btn2{
+        display: block;
+        margin: 15px 0;
+        background-color: #ffb700;
+    }
+    
+    .prdDetailWrapper > div > .desc > button:hover{
+        background-color: #d89c03;
+    }
+    
+    .prdDetailWrapper > div > .desc > .btn1{
+        background-color: #FFD600;
+    }
+    
+    .prdDetailWrapper > div > .desc > .btn2{
+        background-color: #ffb700;
+    }
+    
+}

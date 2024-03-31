@@ -1,0 +1,40 @@
+.BackButton {
+    margin: 10px 0 0 5%;
+}
+
+.BackButton > a:nth-child(1){
+    text-decoration: none;
+    color: #fff;
+    background-color: #2E0052;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.BackButton > a:nth-child(2){
+    display: none;
+    max-width: 35px;
+    max-height: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+.BackButton > a:nth-child(2) > .icon{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .BackButton > a:nth-child(1){
+        display: none;
+    }
+
+    .BackButton > a:nth-child(2){
+        display: flex;
+    }
+}
