@@ -49,11 +49,10 @@ const Products = () => {
       const indexOfFirstItem = indexOfLastItem - 8;
       const currentProducts = products.slice(indexOfFirstItem, indexOfLastItem);
       setCurrentPrds(currentProducts)
-      console.log(products, currentProducts)
     }else{
       setCurrentPrds(products)
     }
-  }, [currentPage, count])
+  }, [currentPage, products])
 
 
   return (

@@ -29,7 +29,7 @@ const SearchAndFilters = () => {
     filters[filterName] = filterValue;
     setProductLoader(true)
      try {
-      const { data } = await axios.get(`https://musicart-backend-c8rh.onrender.com/api/product/filter?name=${searchValue}&headPhoneType=${filters.headPhoneType}&brand=${filters.brand}&color=${filters.color}&price=${filters.price}&sortBy=${filters.sortBy}`, {
+      const { data } = await axios.get(`http://localhost:5500/api/product/filter?name=${searchValue}&headPhoneType=${filters.headPhoneType}&brand=${filters.brand}&color=${filters.color}&price=${filters.price}&sortBy=${filters.sortBy}`, {
         headers: {
           authorization: localStorage.getItem('jwtToken')
         }
