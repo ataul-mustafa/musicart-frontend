@@ -33,7 +33,7 @@ const ProductDetails = () => {
 
     const getProduct = async () => {
         setLoading(true)
-        const { data } = await axios.get(`http://localhost:5500/api/product/get-one/${id}`, {
+        const { data } = await axios.get(`https://musicart-backend-c8rh.onrender.com/api/product/get-one/${id}`, {
             headers: {
                 authorization: localStorage.getItem('jwtToken')
             }
@@ -68,8 +68,6 @@ const ProductDetails = () => {
 
         setLoading(false)
     }
-
-    // console.log(product.rating)
 
     return (
         <div className={Style.prDetailsCont}>
