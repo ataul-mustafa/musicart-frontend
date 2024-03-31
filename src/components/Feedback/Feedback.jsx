@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 
 const Feedback = () => {
-    const { loading, setLoading, isAuthenticated, setIsAuthenticated } = useContext(globalContext)
+    const { setLoading, isAuthenticated } = useContext(globalContext)
 
     const [formData, setFormData] = useState({
         feedbackType: '',
@@ -54,12 +54,6 @@ const Feedback = () => {
     const onInputChange = async (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value })
-
-        // if(name == 'description'){
-        //     formData.description = value;
-        //     if(e.key === 'Enter' && !e.shiftKey)
-        //     await handleSubmit()
-        // }
     }
 
     const handleSubmit = async (e) => {

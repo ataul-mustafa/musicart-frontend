@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer';
 
 const Signin = () => {
     const navigate = useNavigate();
-    const {loading, setLoading, isAuthenticated, setIsAuthenticated} = useContext(globalContext)
+    const { setLoading } = useContext(globalContext)
 
     const [formData, setFormData] = useState({
         phoneEmail: '', 

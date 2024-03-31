@@ -11,7 +11,7 @@ import MobileNavBar from './MobileComp/MobileNavBar';
 
 const Home = () => {
 
-    const {isAuthenticated, setIsAuthenticated, setLoading, setCartData, setSelectedNav, setUserData} = useContext(globalContext) 
+    const { setIsAuthenticated, setLoading, setCartData, setSelectedNav, setUserData} = useContext(globalContext) 
 
     const loadUser = async ()=>{
         setLoading(true);

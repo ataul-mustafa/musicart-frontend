@@ -21,7 +21,7 @@ const Signup = () => {
         emailError: '',
         passwordError: '',
     })
-    const { loading, setLoading, isAuthenticated, setIsAuthenticated } = useContext(globalContext)
+    const { setLoading } = useContext(globalContext)
 
     useEffect(() => {
         const token = localStorage.getItem('jwtToken');

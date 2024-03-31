@@ -14,23 +14,6 @@ const Cart = () => {
   const navigate = useNavigate();
   const { setLoading, cartData, setCartData, setSelectedNav } = useContext(globalContext)
 
-  // const getCartData = async ()=>{
-  //     setLoading(true);
-
-  //     try {
-  //         const {data} = await axios.get('http://localhost:5500/api/cart/get-cart', {
-  //             headers: {
-  //                 Authorization: localStorage.getItem('jwtToken')
-  //             }
-  //         })
-  //         setCartData(data.products);
-  //     } catch (error) {
-  //         toast.error(error.response.data.error);
-  //     }
-
-  //     setLoading(false)
-  // }
-
   const cartTotalPrice = useMemo(() => {
     let value = 0;
     cartData.forEach(element => {
@@ -64,12 +47,6 @@ const Cart = () => {
     setLoading(true);
 
     try {
-      // const user = await axios.get('http://localhost:5500/api/user/load-user', {
-      //   headers: {
-      //     Authorization: localStorage.getItem('jwtToken')
-      //   }
-      // })
-      // setUserData(user.data.user);
       const { data } = await axios.get('https://musicart-backend-c8rh.onrender.com/api/cart/get-cart', {
         headers: {
           Authorization: localStorage.getItem('jwtToken')
@@ -78,7 +55,6 @@ const Cart = () => {
       setCartData(data.products);
     } catch (error) {
       toast.error(error.response.data.error);
-      // console.log(error.response.data.error)
     }
 
     setLoading(false)

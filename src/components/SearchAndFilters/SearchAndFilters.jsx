@@ -9,7 +9,6 @@ import { globalContext } from '../../context API/ContextProvider';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-
 const SearchAndFilters = () => {
 
   const { setProductLoader, searchValue, setProducts, prodViewMode, setProdViewMode } = useContext(globalContext)
@@ -83,7 +82,6 @@ const SearchAndFilters = () => {
               <select onChange={(e) => { onFilterChange(e, 'color') }}>
                 <option value="">Colour</option>
                 <option value="" disabled>Featured</option>
-                <option value="Blue" >Blue</option>
                 <option value="Black" >Black</option>
                 <option value="White" >White</option>
               </select>

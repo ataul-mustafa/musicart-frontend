@@ -20,7 +20,7 @@ const Checkout = () => {
     totalPrice: '',
     totalAmount: ''
   })
-  // deliveryAdd, paymentMethod, products, totalPrice, totalAmount
+
   const cartTotalPrice = useMemo(() => {
     let value = 0;
     cartData.forEach(element => {
@@ -62,7 +62,6 @@ const Checkout = () => {
   return (
     <>
       <Header pathName={'Home/ Checkout'} />
-      {/* <Link className={Style.backButton} to={'/cart'} >Back to cart</Link> */}
       <BackButton path="/cart" text='Back to cart' />
       <div className={Style.checkoutContainer}>
         <h1>Checkout</h1>

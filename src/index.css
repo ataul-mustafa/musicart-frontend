@@ -87,3 +87,69 @@
    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    margin: 5vw;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.page-item{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #02063c;
+    padding: 1vmax 1.5vmax;
+    border-collapse: collapse;
+    transition: all 0.3s;
+    cursor: pointer;
+    list-style: none;
+}
+
+.page-item:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
+.page-link{
+    text-decoration: none;
+    font: 400 1.2vmax "Roboto";
+    color: rgb(80, 80, 80);
+    transition: all 0.3s;
+}
+
+.page-item:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+    color: rgb(80, 80, 80);
+}
+
+.pageItemActive{
+    background-image: linear-gradient(to left, #57B1FF, #02063c);
+}
+
+.pageLinkActive{
+    color: #fff;
+}
+
+  

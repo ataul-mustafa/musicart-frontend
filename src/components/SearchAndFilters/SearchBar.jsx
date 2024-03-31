@@ -21,7 +21,6 @@ function SearchInput() {
     } catch (error) {
       toast.error(error.response.data.error)
     }
-    // console.log(data)
     setProductLoader(false)
   }
 
@@ -29,27 +28,17 @@ function SearchInput() {
 
     setProductLoader(true);
     try {
-      const {data} = await axios.get(`http://localhost:5500/api/product/filter?name=${e.target.value}`, {
+      const {data} = await axios.get(`https://musicart-backend-c8rh.onrender.com/api/product/filter?name=${e.target.value}`, {
         headers: {
           Authorization: localStorage.getItem('jwtToken')
         }
       })
       setProducts(data);
     } catch (error) {
-      // console.log(error)
       toast.error(error.response.data.error)
     }
     setProductLoader(false)
     setSearchValue(e.target.value)
-
-    // if (e.target.value) {
-    //   const prdcts = products.filter(product => ((product.name).split(',')[0]).toLowerCase().startsWith((e.target.value).toLowerCase()))
-    //   if (prdcts.length > 0) {
-    //     setProducts(prdcts)
-    //   }
-    // } else {
-    //   await getProducts();
-    // }
 
   }
 

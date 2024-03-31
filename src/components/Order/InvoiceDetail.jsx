@@ -8,7 +8,7 @@ import BackButton from '../MobileComp/BackButton';
 import MobileNavBar from '../MobileComp/MobileNavBar';
 
 const InvoiceDetail = () => {
-    const { invoiceDetail, setInvoiceDetail, setLoading, setCartData } = useContext(globalContext);
+    const { invoiceDetail } = useContext(globalContext);
     const [curProduct, setCurProduct] = useState({ ...invoiceDetail?.products[0]?.product })
 
     const cartTotalPrice = useMemo(() => {

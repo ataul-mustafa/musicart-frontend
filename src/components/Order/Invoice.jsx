@@ -12,7 +12,7 @@ import MobileNavBar from '../MobileComp/MobileNavBar';
 
 const Invoice = () => {
 
-    const { setSelectedNav, setInvoiceDetail, setLoading, setCartData } = useContext(globalContext);
+    const { setSelectedNav, setInvoiceDetail, setLoading } = useContext(globalContext);
     const [invoiceData, setInvoiceData] = useState([])
 
     const getInvoiceData = async () => {

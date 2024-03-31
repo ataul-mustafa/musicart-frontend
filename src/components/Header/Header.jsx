@@ -9,6 +9,7 @@ import { FaSearch } from 'react-icons/fa'; // Import the desired icon component
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const Header = ({ pathName }) => {
     const navigate = useNavigate();
