@@ -52,7 +52,6 @@ const Header = ({ pathName }) => {
     }
 
     const onSearchChange = async (e) => {
-        navigate('/')
         setProductLoader(true);
         try {
             const { data } = await axios.get(`https://musicart-backend-c8rh.onrender.com/api/product/filter?name=${e.target.value}`, {
@@ -66,6 +65,10 @@ const Header = ({ pathName }) => {
         }
         setProductLoader(false)
         setSearchValue(e.target.value)
+    }
+
+    const inputClickHandler = () =>{
+        navigate('/')
     }
 
     return (
@@ -132,7 +135,7 @@ const Header = ({ pathName }) => {
 
             <div className={Style.mobileHeaderWrapper}>
                 <div className={Style.mobileHeader}>
-                    <input type="text" onChange={onSearchChange} placeholder='Search Musicart' />
+                    <input type="text" onChange={onSearchChange} onClick={inputClickHandler} placeholder='Search Musicart' />
                     <FaSearch />
                 </div>
             </div>
