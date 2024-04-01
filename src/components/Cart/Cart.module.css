@@ -251,11 +251,10 @@
     }
 
     .cartContainer>div>.wrapper>div:nth-child(1)>div>.top>div:nth-child(1)>img {
-        width: 150px;
-        height: auto;
+        width: 145px;
         max-height: 145px;
         border: none;
-        border: 1px solid rgba(0, 0, 0, 0.12);
+        /* border: 1px solid rgba(0, 0, 0, 0.12); */
     }
 
     .cartContainer>div>.wrapper>div:nth-child(1)>div>.top>div:nth-child(2) {
@@ -281,7 +280,7 @@
     }
 
     .cartContainer>div>.wrapper>div:nth-child(1)>div>.top>div:nth-child(3)>h1 {
-        font-size: 20px;
+        font-size: 15px;
         margin: 0 0 20px 40px;
     }
     .cartContainer>div>.wrapper>div:nth-child(1)>div>.top>div:nth-child(4) > label{
@@ -289,8 +288,8 @@
     }
 
     .cartContainer>div>.wrapper>div:nth-child(1)>div>.top>div:nth-child(4)>select {
-        font-size: 15px;
-        width: 60px;
+        font-size: 14px;
+        width: 50px;
         border-radius: 0;
         background-color: #fff;
         border: 1px solid rgb(191, 184, 184);
@@ -312,7 +311,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 4% 0 40%;
+        padding: 0 4% 0 45%;
         border-top: none;
         margin-top: 5%;
     }
@@ -350,7 +349,7 @@
 
     .cartContainer>div>.wrapper>div:nth-child(3)>h2:nth-child(4) {
         display: block;
-        width: 45%;
+        width: 55%;
         display: flex;
         justify-content: space-between;
         margin-top: 4%;
